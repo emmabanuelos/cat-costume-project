@@ -1,4 +1,40 @@
+nav {
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  width: 90%;
+}
 
+.site-name {
+  text-align: left;
+}
+
+.about-section {
+  text-align: right;
+}
+
+#HeroImage {
+  display: flex;
+  justify-content: center;
+align-items: center;
+
+}
+
+   .navimage1 {
+     display: flex;
+    width: 95%;
+    position: relative;
+    align-self: stretch;
+    top: 0;
+    bottom: 0px;
+  }
+
+  .navimage2 {
+    width: 30%;
+    position: absolute;
+    top: 127px;
+    bottom: 1200px;
+  }
 
 body {
   margin: 0;
