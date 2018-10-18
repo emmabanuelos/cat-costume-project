@@ -2,21 +2,32 @@ nav {
   background-color: white;
   text-align: center;
   padding: 10px;
-  width: 90%;
+  width: 100%;
+
+}
+div{
+  display: block;
 }
 
 .site-name {
-  text-align: left;
+position: absolute;
+  padding: 0px;
+
 }
 
 .about-section {
-  text-align: right;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  text-align: center;
+
 }
 
 #HeroImage {
   display: flex;
   justify-content: center;
 align-items: center;
+position: relative;
 
 }
 
@@ -27,24 +38,39 @@ align-items: center;
     align-self: stretch;
     top: 0;
     bottom: 0px;
+    width:1280px;
+    height:590px;
   }
 
   .navimage2 {
     width: 30%;
     position: absolute;
-    top: 127px;
-    bottom: 1200px;
+    bottom: 0px;
   }
 
 body {
   margin: 0;
+  background-color: orange;
 
+}
+
+/* On devices wider than 400px */
+@media (min-width: 400px) {
+  body{
+    background-color: blue;
+  }
+ .site-name {
+   display: flex;
+   justify-content: center;
+ }
 }
 
 /* On devices wider than 660px */
 @media(min-width: 660px) {
+
 }
 
 /* On devices wider than 940px */
 @media(min-width: 940px) {
+
 }
