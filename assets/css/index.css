@@ -1,21 +1,36 @@
 nav {
   background-color: white;
-  text-align: center;
-  padding: 10px;
-  width: 100%;
+position: relative;
+  padding-top: 10px;
+  padding-left: 10px;
 
+  width: 365px;
 }
-div{
-  display: block;
+
+h1 {
+  font-family:PT Serif;
+  text-align: center;
+}
+
+h2{
+  font-family:cursive;
+  text-align: center;
+  
+}
+
+.paragraph{
+  text-decoration: line-through;
 }
 
 .site-name {
 position: absolute;
   padding: 0px;
+  width: 375px;
 
 }
 
 .about-section {
+
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
@@ -26,25 +41,32 @@ position: absolute;
 #HeroImage {
   display: flex;
   justify-content: center;
-align-items: center;
-position: relative;
-
+  align-items: center;
+  position: relative;
 }
 
-   .navimage1 {
-     display: flex;
-    width: 95%;
-    position: relative;
-    align-self: stretch;
-    top: 0;
-    bottom: 0px;
-    width:1280px;
-    height:590px;
+  .background-photo {
+    display: flex;
+   width: 95%;
+   position: relative;
+   align-self: stretch;
+   top: 0;
+   bottom: 0px;
+   width:375px;
+   height:255px;
   }
 
-  .navimage2 {
-    width: 30%;
+  .purrfectcostume {
     position: absolute;
+    font-family: PT Serif Bold;
+    color: white;
+    font-size: 30px;
+  }
+
+  .supercat {
+    width: 50%;
+    position: absolute;
+    left: 100px;
     bottom: 0px;
   }
 
@@ -55,22 +77,43 @@ body {
 }
 
 /* On devices wider than 400px */
-@media (min-width: 400px) {
+@media (max-width: 400px) {
   body{
-    background-color: blue;
+    background-color: white;
   }
  .site-name {
    display: flex;
    justify-content: center;
  }
+
+ .about-section {
+   visibility: hidden;
+ }
 }
 
 /* On devices wider than 660px */
-@media(min-width: 660px) {
+@media(max-width: 660px) {
 
 }
 
 /* On devices wider than 940px */
 @media(min-width: 940px) {
+  .background-photo {
+    display: flex;
+   width: 95%;
+   position: relative;
+   align-self: stretch;
+   top: 0;
+   bottom: 0px;
+   width:1280px;
+   height:590px;
+}
+
+#HeroImage {
+  display: flex;
+  justify-content: center;
+align-items: center;
+position: relative;
+}
 
 }
