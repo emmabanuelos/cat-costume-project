@@ -8,22 +8,25 @@ html {
 nav {
   background-color: white;
   position: relative;
-  width: 365px;
+  width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-family: 'PT Sans Narrow',serif;
+  display: flex;
+  justify-content: space-between;
 }
 body {
-    font-family: PT Sans Narrow
+    font-family: 'PT Sans Narrow', serif;
   }
 
 h1 {
-  font-family:PT Serif;
+  font-family: "PT Serif";
   text-align: center;
 
 }
 
 h2{
-  font-family:PT Sans Narrow Bold;
+  font-family: 'PT Sans Narrow', Bold;
   text-align: center;
 
 }
@@ -38,9 +41,9 @@ h2{
 
 
 .site-name {
-position: absolute;
+position: relative;
   padding: 0px;
-  width: 375px;
+
   font-size: 20px;
 
 }
@@ -84,13 +87,13 @@ position: absolute;
   .find {
     justify-content: flex-start;
     font-size: 20px;
-    font-family: PT Sans Narrow;
+    font-family: "PT Sans Narrow", sans-serif;
   }
 
   .costume {
     text-align: right;
     font-size: 20px;
-    font-family: PT Sans Narrow
+    font-family: "PT Sans Narrow",serif;
   }
 
   .supercat {
@@ -103,8 +106,8 @@ position: absolute;
 
 p {
   display: flex;
-justify-content: center;
-align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #e6e6e6;
     width: 365px;
     height: 200px;
@@ -179,6 +182,7 @@ margin-top: 50px;
 
  .getintouch {
    visibility: hidden;
+   font-family: "PT Serif";
  }
 }
 
@@ -189,22 +193,78 @@ margin-top: 50px;
 
 /* On devices wider than 940px */
 @media(min-width: 940px) {
-  .background-photo {
-    display: flex;
-   width: 95%;
-   position: relative;
-   align-self: stretch;
-   top: 0;
-   bottom: 0px;
-   width:1280px;
-   height:590px;
-}
 
-#HeroImage {
+  .nav {
+    display: flex;
+    font-family: 'PT Sans Narrow', sans-serif;
+    }
+
+    .about-section{
+      display: flex;
+      justify-content: space-between;
+      font-family: 'PT Sans Narrow', sans-serif;
+      font-size: 20px;
+
+    }
+
+    .about-nav{
+      background-color: white;
+      width: 100%;
+      padding-right: 30px;
+    }
+
+    .contact-nav{
+      padding-right: 30px;
+    }
+
+  #HeroImage{
+    width: 1280px;
+    overflow: hidden;
+    }
+
+  .background-photo {
+    width: 1280px;
+    height: 300px;
+    }
+
+  .purrfectcostume {
+   font-size: 50px;
+  }
+
+  .supercat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 300px;
+    margin-left: 400px;
+
+  }
+
+.section {
+  display: flex;
+}
+  .paragraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+    margin-left: 250px;
+    font-family: 'PT Serif', serif;
+  }
+
+.about {
   display: flex;
   justify-content: center;
-align-items: center;
-position: relative;
+  }
+
+.about-kat{
+
+}
+
+.about-mavis {
+  background-color: #e6e6e6;
+  margin-left: 50px;
 }
 
 }
