@@ -184,6 +184,14 @@ margin-top: 50px;
    visibility: hidden;
    font-family: "PT Serif";
  }
+
+ .baseballcat {
+   display: none;
+ }
+
+ .hawaiicat {
+  display: none;
+   }
 }
 
 /* On devices wider than 660px */
@@ -251,20 +259,49 @@ margin-top: 50px;
     width: 750px;
     margin-left: 250px;
     font-family: 'PT Serif', serif;
+    line-height: 2;
   }
 
 .about {
   display: flex;
-  justify-content: center;
+  margin-left: 250px;
+  padding: 10px;
+  margin-top: 50px;
   }
 
 .about-kat{
-
+line-height: 30px;
 }
 
 .about-mavis {
   background-color: #e6e6e6;
   margin-left: 50px;
+  padding: 10px;
+  line-height: 30px;
 }
 
+.cat-photos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 50px;
+  margin-top: 20px;
+}
+
+.baseballcat {
+border-radius: 50%;
+}
+
+.hawaiicat {
+border-radius: 50%;
+}
+
+.grumpycat {
+margin-left: 0;
+margin-top: 0;
+}
+
+.footer-contact {
+  background-color: #e6e6e6;
+}
 }
